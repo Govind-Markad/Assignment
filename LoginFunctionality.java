@@ -14,18 +14,18 @@ public class LoginFunctionality {
 				"D://Atomation Testing Project//edgedriver_win64//msedgedriver.exe");
 
 		WebDriver driver = new EdgeDriver();
-//	Step 1:	Navigate to the Amazon login page.
+// Step 1:	Navigate to the Amazon login page.
 		driver.get("https://www.amazon.com/");
 
 		driver.manage().window().maximize();
 
 		driver.findElement(By.id("nav-link-accountList-nav-line-1")).click();
 // Step 2 : Enter valid emailin the "Email" field.
-		driver.findElement(By.id("ap_email")).sendKeys("enter enamil here");
+		driver.findElement(By.id("ap_email")).sendKeys("Enter email here");
 // Step 3 : Click on the "Continue" button.
 		driver.findElement(By.id("continue")).click();
 // Step 4 : Enter a valid password in the "Password" field
-		driver.findElement(By.id("ap_password")).sendKeys("enter passward here");
+		driver.findElement(By.id("ap_password")).sendKeys("Enter password here");
 // Step 5 : Click on the "Sign-In" button.
 		driver.findElement(By.id("signInSubmit")).click();
 
